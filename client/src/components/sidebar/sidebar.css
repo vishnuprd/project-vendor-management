@@ -1,0 +1,26 @@
+/* Keyframes for icon animation */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .sidebar-icon {
+    animation: bounce 2s infinite ease-in-out; /* Continuous bounce animation */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for icons */
+  .sidebar-item:hover .sidebar-icon {
+    transform: scale(1.2) rotate(10deg); /* Slight scaling and rotation */
+    color: #ff6361; /* Change color on hover */
+  }
+  
+  /* Add transition to the anchor tag for smoother background change */
+  .sidebar-item a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
