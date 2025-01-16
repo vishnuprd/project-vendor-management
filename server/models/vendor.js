@@ -36,6 +36,9 @@ const VendorRegisterFormSchema = new mongoose.Schema({
   MSMERegistrationNumber: {
     type: String,
   },
+  UIDAINumber: {
+    type: String,
+  },
   CINNumber: {
     type: String,
   },
