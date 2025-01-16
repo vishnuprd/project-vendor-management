@@ -19,11 +19,11 @@ RUN npm run build
 # Step 2: Use a lightweight Nginx image to serve the static files
 FROM nginx:alpine
 
-# Remove the default Nginx static files
-RUN rm -rf /usr/share/nginx/html/*
+# # Remove the default Nginx static files
+# RUN rm -rf /usr/share/nginx/html/*
 
-# Copy the built React files from the previous stage to the Nginx directory
-COPY --from=build /app/build /usr/share/nginx/html
+# # Copy the built React files from the previous stage to the Nginx directory
+# COPY --from=build /app/build /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
