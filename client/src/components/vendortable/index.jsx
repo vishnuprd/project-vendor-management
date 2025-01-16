@@ -418,6 +418,19 @@ const handleFilterChange = (e) => {
                         className="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:text-white dark:border-gray-600"
                       />
                     </div>
+
+                    <div>
+                      <label className="block mb-2 text-sm font-medium text-gray-900">
+                       UIDAI Number
+                      </label>
+                      <input
+                        type="text"
+                        name="UIDAINumber"
+                        value={selectedVendor.UIDAINumber || ""}
+                        onChange={handleInputChange}
+                        className="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                      />
+                    </div>
   
                     {/* CIN Number */}
                     <div>
